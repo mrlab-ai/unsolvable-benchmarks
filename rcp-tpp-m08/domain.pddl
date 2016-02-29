@@ -1,11 +1,13 @@
 ; IPC5 Domain: TPP Metric
-; Authors: Alfonso Gerevini and Alessandro Saetti 
+; Authors: Alfonso Gerevini and Alessandro Saetti
 
 (define (domain TPPLike-Metric)
-(:requirements :typing) 
-(:types 
-    moneylevel
-    depot market - place 
+(:requirements :typing)
+(:types
+    moneylevel - object
+    place - object
+    depot market - place
+    locatable - object
 	truck goods - locatable)
 
 (:predicates (at ?t - truck ?p - place)
@@ -14,14 +16,15 @@
          (loaded ?g - goods ?t - truck)
          (connected ?p1 ?p2 - place)
 	     (stored ?g - goods)
-	     (drive-cost ?p1 ?p2 - moneylevel ?level - moneyevel)
+	     (drive-cost ?p1 ?p2 - place ?level - moneylevel)
 	     (price ?g - goods ?m - market ?level - moneylevel)
-	     (money ?moneylevel)
+	     (money ?m - moneylevel)
+         (sum ?m1 ?m2 ?m3 - moneylevel)
 )
 
 (:action drive
  :parameters (?t - truck ?from ?to - place ?moneypre ?moneydelta ?moneypost - moneylevel)
- :precondition (and (at ?t ?from) (connected ?from ?to) 
+ :precondition (and (at ?t ?from) (connected ?from ?to)
  					(money ?moneypre) (drive-cost ?from ?to ?moneydelta)
  					(sum ?moneypost ?moneydelta ?moneypre))
  :effect (and (not (at ?t ?from)) (not (money ?moneypre)) (at ?t ?to) (money ?moneypost)))

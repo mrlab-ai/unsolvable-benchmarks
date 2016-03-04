@@ -26567,7 +26567,7 @@
 	(connected market7 market8)
 	(drive-cost market8 market7 level190)
 	(connected market8 market7)
-	(money level1824))
+	(money level1820))
 
 (:goal (and
 	(stored goods0)

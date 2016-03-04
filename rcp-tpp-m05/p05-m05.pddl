@@ -50304,7 +50304,7 @@
 	(connected market7 market8)
 	(drive-cost market8 market7 level810)
 	(connected market8 market7)
-	(money level1575))
+	(money level1570))
 
 (:goal (and
 	(stored goods0)

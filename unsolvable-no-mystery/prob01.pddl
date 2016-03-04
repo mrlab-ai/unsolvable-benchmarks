@@ -10,7 +10,7 @@
     (at karfiol boetzingen)
     (at moped waldhaus)
     (at seitenbacher-muesli inzlingen)
-    (capacity moped capacity-3)
+    (capacity moped capacity-1)
     (capacity-number capacity-0)
     (capacity-number capacity-1)
     (capacity-number capacity-2)

@@ -2,11 +2,12 @@
   (problem strips-mysty-x-1)
   (:domain no-mystery-strips)
   (:objects inzlingen bahlingen boetzingen sexau waldhaus schallstadt
-      moped seitenbacher-muesli karfiol kapselheber fuel-0 fuel-1
+      moped seitenbacher-muesli karfiol kapselheber-1 kapselheber-2 fuel-0 fuel-1
       fuel-2 fuel-3 fuel-4 fuel-5 fuel-6 capacity-0 capacity-1
       capacity-2 capacity-3)
   (:init
-    (at kapselheber waldhaus)
+    (at kapselheber-1 waldhaus)
+    (at kapselheber-2 sexau)
     (at karfiol waldhaus)
     (at moped waldhaus)
     (at seitenbacher-muesli waldhaus)
@@ -32,11 +33,11 @@
     (connected waldhaus schallstadt)
     (connected waldhaus sexau)
     (fuel bahlingen fuel-2)
-    (fuel boetzingen fuel-4)
+    (fuel boetzingen fuel-1)
     (fuel inzlingen fuel-2)
     (fuel schallstadt fuel-3)
-    (fuel sexau fuel-0)
-    (fuel waldhaus fuel-5)
+    (fuel sexau fuel-1)
+    (fuel waldhaus fuel-2)
     (fuel-number fuel-0)
     (fuel-number fuel-1)
     (fuel-number fuel-2)
@@ -56,12 +57,14 @@
     (location schallstadt)
     (location sexau)
     (location waldhaus)
-    (package kapselheber)
+    (package kapselheber-1)
+    (package kapselheber-2)
     (package karfiol)
     (package seitenbacher-muesli)
     (vehicle moped))
   (:goal
     (and
-      (at kapselheber inzlingen)
+      (at kapselheber-1 inzlingen)
+      (at kapselheber-2 boetzingen)
       (at seitenbacher-muesli inzlingen)
       (at karfiol inzlingen))))

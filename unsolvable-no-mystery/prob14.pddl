@@ -30,9 +30,9 @@
     (connected sexau bahlingen)
     (connected waldhaus schallstadt)
 
-    (fuel bahlingen fuel-4)
-    (fuel boetzingen fuel-4)
-    (fuel inzlingen fuel-5)
+    (fuel bahlingen fuel-2)
+    (fuel boetzingen fuel-3)
+    (fuel inzlingen fuel-2)
     (fuel schallstadt fuel-4)
     (fuel sexau fuel-6)
     (fuel waldhaus fuel-5)

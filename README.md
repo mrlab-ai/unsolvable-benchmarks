@@ -24,7 +24,9 @@ from (1), but keep all tasks from those directories.
 
   * Unify filenames.
   * Find good naming convention for domains.
-  * Harmonize domain sizes?
   * Analyze the unsolvable-* domains and decide which ones to keep.
   * Choose between over-* and unsat-* variants?
-  * Remove duplicates within UIPC domains?
+  * Choose 20 instances for the remaining domains.
+  * Put the other instances into an "extra-instances" directory.
+  * Remove duplicates within UIPC domains.
+  * Explain in README how the benchmarks were selected.
